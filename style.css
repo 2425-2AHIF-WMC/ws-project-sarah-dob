@@ -1,0 +1,170 @@
+.body {
+    font-family:Georgia, "Times New Roman", serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#nav{
+    font-size: 1.5rem;
+    color: whitesmoke;
+    position: fixed;
+    z-index: 1;
+    background: floralwhite;
+    width: 100%;
+    height: 5rem;
+    border-bottom: black solid;
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+
+}
+
+body a,body a:visited,body a:active {
+    text-decoration: none;
+    color: black;
+}
+
+#nav a{
+    margin: 1rem;
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+
+#nav a:hover::before {
+    transform: scaleX(1);
+}
+
+#nav a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+img.destination {
+    width: 35rem;
+    height: 20rem;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 60rem;
+    margin-bottom: 3rem;
+}
+
+.image-container .background-image {
+    position: absolute;
+    width: 100%;
+    height: 93%;
+    background-image: url('airplane.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+#nyc .background-image {
+    background-image: url('timesq.JPG');
+}
+
+#japan .background-image {
+    background-image: url('street.JPG');
+}
+
+.image-container .overlay-text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+.image-container .overlay-text p {
+    font-size: 1.7rem;
+}
+
+#gallery {
+    padding-top: 3rem;
+    margin: 0 auto;
+    width: 40rem;
+    height: 40rem;
+}
+
+#gallery img {
+    width: 25rem;
+    height: 50rem;
+}
+
+h2 {
+    padding-bottom: 2rem;
+}
+
+#aboutme
+{
+    background: linear-gradient(to right, #e1c6f2, #e89af5);
+    height: 100%;
+    width: 100%;
+}
+
+.about-me {
+    text-align: center;
+    color: black;
+    padding: 4rem;
+}
+
+.about-me h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about-me p {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    max-width: 50%;
+    padding-bottom: 2rem;
+}
+#nav + div{
+    padding-top: 5rem;
+}
+
+#dreamDestinations {
+    display: flex;
+    flex-wrap: wrap;
+}
+#dreamDestinations section {
+    background-color: floralwhite;
+    height: 30%;
+    width: 30%;
+    margin: auto;
+    padding: 1rem;
+}
+section span{
+    font-weight: bold;
+    padding: 2rem;
+}
+
+#dreamDestinations img {
+    padding: 1rem;
+    height: 100%;
+    width: 100%;
+}
+
+.card {
+    margin: auto;
+    margin-bottom: 5rem;
+}
+
+.custom-btn {
+    background-color: mediumpurple !important;
+}
